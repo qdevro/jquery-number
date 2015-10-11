@@ -150,7 +150,7 @@
 		if( number === true )
 		{
 			// If this element is a number, then we add a keyup
-			if( this.is('input:text') )
+			if( this.is('input:text') || this.is('input[type="number"]') )
 			{
 				// Return the jquery collection.
 				return this.on({
